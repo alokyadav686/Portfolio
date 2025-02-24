@@ -21,3 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateIndicator(document.querySelector(".nav-link.active"));
 });
+function applyShinyEffect(elementId, speed, disabled) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        if (disabled) {
+            element.classList.add('disabled');
+        } else {
+            element.classList.remove('disabled');
+            element.style.animationDuration = speed + 's';
+        }
+    }
+}
+
+applyShinyEffect('shinyText', 3, false);

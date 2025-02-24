@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lumanosimo&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Albert Sans", sans-serif;
     background-color: #F1FAEE;
@@ -17,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    height: 80.3vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -67,15 +68,143 @@ header {
 
 #midnav {
     background-color: #E63946;
-    padding:1% 6% 1% 5%  ;
+    padding: 1% 6% 1% 5%;
     border-radius: 12rem;
 }
 
 #nav-indicator {
     position: absolute;
-    height: 6.8vh; 
+    height: 6.8vh;
     background-color: #E63946;
     border-radius: 12rem;
     transition: all 0.3s ease-in-out;
     z-index: 1;
+}
+
+.section2 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.section2a {
+    width: 40%;
+    height: 80vh;
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2b {
+    width: 20%;
+    height: 80vh;
+}
+
+.section2c {
+    width: 40%;
+    height: 80vh;
+    padding: 2% 4% 2% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shiny-text {
+    color: #000000;
+    background: linear-gradient(
+        120deg,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(230, 57, 70, 0.8) 50%,
+        rgba(0, 0, 0, 0) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+.shiny-text.disabled {
+    animation: none;
+}
+
+.sec2ainfo {
+    width: 100%;
+    height: 40vh;
+}
+
+.sec2hlw {
+    width: 20%;
+    height: 5%;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.sec2ainfo p {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.sec2crate {
+    width: 100%;
+    height: 20vh;
+}
+
+.sec2cinfo {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.sec2cinfo h3 {
+    font-size: 2vw;
+    align-self: flex-start;
+    font-family: "Lumanosimo", serif;
+}
+
+.sec2cinfo p {
+    font-size: 1vw;
+    max-width: 80%;
+}
+
+.sec2crate {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.sec2crate p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.sec2crate h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
 }
