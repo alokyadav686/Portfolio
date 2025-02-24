@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lumanosimo&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Albert Sans", sans-serif;
+    background-color: #F1FAEE;
+}
+
+header {
+    width: 100%;
+    height: 80.3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: relative;
+    width: 90.3vw;
+    max-width: 1200px;
+    height: 8.3vh;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    margin-top: 7vh;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
+.nav1, .nav3 {
+    width: 38%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav2 {
+    width: 24%;
+    height: 8.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.nav2 h1 {
+    font-family: "Lumanosimo", serif;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+#midnav {
+    background-color: #E63946;
+    padding:1% 6% 1% 5%  ;
+    border-radius: 12rem;
+}
+
+#nav-indicator {
+    position: absolute;
+    height: 6.8vh; 
+    background-color: #E63946;
+    border-radius: 12rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
