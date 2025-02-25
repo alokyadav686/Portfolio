@@ -122,27 +122,18 @@ header {
 }
 
 .shiny-text {
-    color: #000000;
-    background: linear-gradient(
-        120deg,
-        rgba(0, 0, 0, 0) 40%,
-        rgba(230, 57, 70, 0.8) 50%,
-        rgba(0, 0, 0, 0) 60%
-    );
+    font-size: 1.25vw;
+    font-weight: bold;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0) 40%, rgba(230, 57, 70, 0.8) 50%, rgba(0, 0, 0, 0) 60%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
-    display: inline-block;
     animation: shine 5s linear infinite;
 }
 
 @keyframes shine {
-    0% {
-        background-position: 100%;
-    }
-    100% {
-        background-position: -100%;
-    }
+    0% { background-position: 100%; }
+    100% { background-position: -100%; }
 }
 
 .shiny-text.disabled {
@@ -156,15 +147,15 @@ header {
 }
 
 .sec2hlw {
-    width: 20%;
-    height: 5%;
-    margin-bottom: 2vh;
+    width: 32%;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: 2px solid black;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 .sec2ainfo p {
@@ -262,4 +253,7 @@ header {
 }
 .hireme p{
     color: #fff;
+}
+.highlight{
+    color: #E63946;
 }
