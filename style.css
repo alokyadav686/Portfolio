@@ -87,6 +87,7 @@ header {
     width: 100%;
     height: 80vh;
     display: flex;
+    overflow: hidden;
 }
 
 .section2a {
@@ -108,6 +109,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 
@@ -219,9 +221,9 @@ header {
 }
 .sec2port{
     width: 100%;
-    height: 8vh;
+    height: 11%;
     margin-bottom: 2vh;
-    background-color: #ffffff23;
+    background-color: #ffffff38;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,4 +258,40 @@ header {
 }
 .highlight{
     color: #E63946;
+}
+
+.sec2b-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section2b {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2port, .hireme {
+    position: relative;
+    z-index: 1; 
+}
+
+.sec2b-semicircle {
+    position: absolute;
+    width: 200%; 
+    height: 100%;
+    background-color: #E63946;
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    bottom: -50%;
+}
+
+.space{
+    width: 100%;
+    height: 89%;
 }
