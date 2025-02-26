@@ -279,9 +279,18 @@ header {
     z-index: 1; 
 }
 
+
+.space{
+    width: 100%;
+    height: 89%;
+}
+.section3{
+    width: 100%;
+    height: 100vh;
+}
 .sec2b-semicircle {
     position: absolute;
-    width: 200%; 
+    width: 200%;  
     height: 100%;
     background-color: #E63946;
     border-radius: 50% 50% 0 0;
@@ -289,9 +298,28 @@ header {
     transform: translateX(-50%);
     z-index: -2;
     bottom: -50%;
+    transition: all 0.5s ease-in-out;
 }
 
-.space{
-    width: 100%;
-    height: 89%;
+.expanded {
+    width: 250vw;  /* Make it large enough to cover the screen */
+    height: 250vh;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.sec2b-semicircle {
+    transition: transform 0.1s ease-out;
+}
+
+.section2 > *:not(.section2b), header {
+    transition: opacity 0.2s ease-out;
+    
 }
