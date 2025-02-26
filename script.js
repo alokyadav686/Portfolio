@@ -38,7 +38,7 @@ applyShinyEffect('shinyText', 3, false);
 
 document.addEventListener("wheel", function (event) {
     const semiCircle = document.querySelector(".sec2b-semicircle");
-    const content = document.querySelectorAll(".section2 > *:not(.section2b), header"); 
+    const content = document.querySelectorAll(".section2 > *:not(.section2b),.sec2port, header"); 
     const body = document.body;
 
     let scaleFactor = parseFloat(semiCircle.getAttribute("data-scale")) || 1;

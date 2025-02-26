@@ -321,7 +321,7 @@ header {
     transition: transform 0.1s ease-out;
 }
 
-.section2 > *:not(.section2b), header {
+.section2 > *:not(.section2b),.sec2port,header {
     transition: opacity 0.2s ease-out;
     
 }
@@ -338,7 +338,6 @@ header {
     transition: transform 0.8s ease-in-out, left 0.8s ease-in-out;
 }
 
-/* Move image to left-center when scrolled */
 .move-left-center {
     transform: translate(-150%, -0%) scale(1);
    
