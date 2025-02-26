@@ -23,6 +23,7 @@ header {
     height: 20vh;
     display: flex;
     justify-content: center;
+    
 }
 
 .navbar {
@@ -87,7 +88,6 @@ header {
     width: 100%;
     height: 80vh;
     display: flex;
-    overflow: hidden;
 }
 
 .section2a {
@@ -302,7 +302,7 @@ header {
 }
 
 .expanded {
-    width: 250vw;  /* Make it large enough to cover the screen */
+    width: 250vw;  
     height: 250vh;
     border-radius: 50%;
     bottom: 0;
@@ -322,4 +322,9 @@ header {
 .section2 > *:not(.section2b), header {
     transition: opacity 0.2s ease-out;
     
+}
+.section1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
