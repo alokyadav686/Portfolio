@@ -16,6 +16,7 @@ html {
 body {
     font-family: "Albert Sans", sans-serif;
     background-color: #F1FAEE;
+    cursor: pointer;
 }
 
 header {
@@ -161,8 +162,8 @@ header {
 }
 
 .sec2ainfo p {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .sec2crate {
@@ -211,6 +212,7 @@ header {
 .sec2crate p {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    color: #E63946;
 }
 
 .sec2crate h3 {
@@ -302,8 +304,8 @@ header {
 }
 
 .expanded {
-    width: 250vw;  
-    height: 250vh;
+    width: 100vw;  
+    height: 100vh;
     border-radius: 50%;
     bottom: 0;
 }
@@ -311,7 +313,7 @@ header {
 .hidden {
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
 }
 
 
@@ -327,4 +329,24 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+.sec2b-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out, left 0.8s ease-in-out;
+}
+
+/* Move image to left-center when scrolled */
+.move-left-center {
+    transform: translate(-150%, -0%) scale(1);
+   
+}
+.spark-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
